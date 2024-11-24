@@ -1,0 +1,316 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  background: url(../img/bg.png) fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  height: 100vh;
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+}
+
+.container > div {
+  left: 0;
+  right: 0;
+  top: 20vh;
+}
+
+.one {
+  margin-top: 125px;
+  color: #262424;
+  font-size: 5rem;
+  font-weight: bolder;
+  text-shadow: 10px 10px 8px rgba(0, 0, 0, 0.7);
+}
+
+.one img {
+  width: 70vw;
+}
+
+.one .hi {
+  width: 15vw;
+}
+
+.two {
+  margin-top: 160px;
+  font-size: 2rem;
+  font-weight: lighter;
+}
+
+.three {
+  margin-top: 300px;
+  font-size: 3rem;
+}
+
+.three span {
+  font-size: 0.5em;
+  vertical-align: super;
+}
+
+.four .text-box {
+  border: 3px solid #aaa;
+  border-radius: 10px;
+  margin: 20px auto 0;
+  padding: 10px;
+  position: relative;
+  width: 600px;
+  line-height: 30px;
+}
+
+.text-box p {
+  overflow: hidden;
+  margin-bottom: 20px;
+  text-align: left;
+  text-align: justify;
+  font-size: 18px;
+  line-height: 1.7;
+  color: #1c1a1a;
+  text-indent: 50px;
+}
+
+.text-box p span {
+  font-weight: bold;
+  font-size: larger;
+  color: #f90e0e;
+}
+
+.idea-1 {
+  margin-top: 200px;
+  font-size: 2rem;
+}
+
+.idea-1 span {
+  font-weight: bold;
+  color: #ff0000;
+}
+
+.idea-2 {
+  margin-top: 25px;
+  font-size: 2rem;
+}
+
+.idea-3 {
+  margin-top: 200px;
+  font-weight: bold;
+  font-size: 4rem;
+}
+
+.idea-3 span {
+  color: #ff0000;
+}
+
+.six img {
+  margin-top: 60px;
+  margin-bottom: 100px;
+  margin-right: 30px;
+  display: inline-block;
+  height: 250px;
+  box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.7);
+}
+
+.seven img {
+  margin-top: 30px;
+  height: 325px;
+  margin-bottom: 100px;
+  transition: transform 1s;
+}
+
+.seven img:hover {
+  transform: scale(1.5);
+}
+
+.seven h3 {
+  font-size: 2rem;
+  font-weight: bolder;
+  color: #f50000;
+  margin-top: 100px;
+  text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.7);
+}
+
+/* INDEX2 */
+.first h1 {
+  margin-top: 100px;
+  font-size: 3.8rem;
+  font-weight: bolder;
+  text-shadow: 6px 6px 7px rgba(0, 0, 0, 0.7);
+  color: #ff1e1ee8;
+}
+
+.first img {
+  margin-top: 50px;
+  height: 350px;
+  filter: drop-shadow(150px 150px 15px rgba(0, 0, 0, 0.7));
+}
+
+@media screen and (max-width: 600px) {
+  .one img {
+    width: 80vw;
+  }
+  .one p {
+    margin-bottom: -100px;
+    font-size: 1.7rem;
+  }
+  .three p {
+    font-size: 2.1rem;
+  }
+  .four .text-box {
+    width: 75vw;
+  }
+  .five .idea-3 {
+    font-size: 3rem;
+  }
+  .six img {
+    margin: 30px auto 50px auto;
+    display: block;
+    width: 200px;
+    height: auto;
+  }
+  .seven img {
+    margin-top: 50px;
+    width: 200px;
+    height: auto;
+  }
+
+  .container h1 {
+    margin-top: 70px;
+    font-size: 2.4rem;
+  }
+  .container img {
+    width: 350px;
+    height: auto;
+  }
+}
