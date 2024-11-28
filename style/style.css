@@ -276,7 +276,13 @@ body {
   filter: drop-shadow(150px 150px 15px rgba(0, 0, 0, 0.7));
 }
 
-@media screen and (max-width: 600px) {
+@media (max-width: 600px) {
+  body {
+    background: url(../img/anisya.png) fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
   .one img {
     width: 80vw;
   }
@@ -290,6 +296,11 @@ body {
   .four .text-box {
     width: 75vw;
   }
+
+  .four .text-box p {
+    color: #333333;
+  }
+
   .five .idea-3 {
     font-size: 3rem;
   }
